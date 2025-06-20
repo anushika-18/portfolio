@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    /* Reset & Typography */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: #f7f7f7; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Layout Containers */
+    header, footer { background: #030303; color: #c5c6c7; text-align: center; padding: 40px 20px; }
+    nav { margin-top: 10px; }
+    nav a { margin: 0 15px; font-weight: 600; color: #66fcf1; }
+    .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+
+    /* Hero / Intro Section */
+    header h1 { font-size: 2.8rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; }
+
+    /* Sections */
+    section { margin-bottom: 60px; }
+    section h2 { font-size: 2rem; margin-bottom: 20px; border-left: 4px solid #66fcf1; padding-left: 10px; color: #0b0c10; }
+
+    /* Skills */
+    .skills { display: grid; grid-template-columns: repeat(auto-fit,minmax(120px,1fr)); gap: 10px; }
+    .skills div { background: #c5c6c7; padding: 15px; border-radius: 4px; text-align: center; font-weight: 600; }
+
+    /* Projects */
+    .projects { display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 20px; }
+    .project-card { background: #fff; border-radius: 5px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform .2s; }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card img { width: 100%; height: 160px; object-fit: cover; }
+    .project-info { padding: 15px; }
+    .project-info h3 { margin-bottom: 10px; }
+    .project-info p { font-size: 0.95rem; margin-bottom: 15px; }
+    .project-info a { display: inline-block; background: #66fcf1; color: #1f2833; padding: 8px 12px; border-radius: 3px; font-weight: 600; }
+
+    /* Contact */
+    .contact-details { list-style: none; font-size: 1rem; }
+    .contact-details li { margin-bottom: 10px; }
+
+    /* Footer */
+    footer p { margin: 5px 0; font-size: 0.9rem; }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+      section h2 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Anu FX</h1>
+    <p>Full‑Stack Developer • UI/UX Enthusiast • Editor</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m a developer in building scalable web applications using modern technologies like React, Node.js, and Python. I have a passion for building accessible, performant, and beautiful digital experiences.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>HTML5</div>
+        <div>CSS3 / Sass</div>
+        <div>JavaScript (ES6+)</div>
+        <div>React.js</div>
+        <div>Node.js</div>
+        <div>Python</div>
+        <div>SQL / NoSQL</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x240?text=Project+1" alt="Project One">
+          <div class="project-info">
+            <h3>Project One</h3>
+            <p>A responsive web app for task tracking, built with React and Firebase.</p>
+            <a href="#">View Details</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x240?text=Project+2" alt="Project Two">
+          <div class="project-info">
+            <h3>Project Two</h3>
+            <p>An e‑commerce store with full-cart functionality and payment gateway integration.</p>
+            <a href="#">View Details</a>
+          </div>
+        </div>
+        <!-- Add more project-card divs here -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <ul class="contact-details">
+        <li>Email: <a href="mailto:you@example.com">anufx@example.com</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/yourname" target="_blank">linkedin.com/in/AnuFx</a></li>
+        <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/AnuFx</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Anu Fx. All rights reserved.</p>
+    <p>Built with ❤️ and code.</p>
+  </footer>
+
+</body>
+</html>
